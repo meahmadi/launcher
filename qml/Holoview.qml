@@ -14,7 +14,7 @@ Rectangle{
 	radius: 5
 	
 	anchors.fill: parent
-	anchors.margins: 20
+	anchors.margins: 40
 	
 	Bozorgrah{
 		basey:100

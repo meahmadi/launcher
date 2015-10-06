@@ -9,7 +9,7 @@ Item {
 			id:skyimage
 			source : "sky/001.png";
 			asynchronous: true;
-			fillMode: Image.PreserveAspectCrop;
+			fillMode: Image.Stretch ;
 			anchors.fill: parent;
 			smooth: true;
 		}

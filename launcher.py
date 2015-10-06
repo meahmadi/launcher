@@ -2,7 +2,8 @@
 #!/usr/bin/env python
 
 from PyQt5.QtCore import  QUrl,QObject, QUuid, pyqtSlot, pyqtProperty,Qt
-from PyQt5.QtGui import QColor, QGuiApplication
+from PyQt5.QtGui import QColor,QWindow, QGuiApplication
+ 
 from PyQt5.QtQml import qmlRegisterType
 from PyQt5.QtQuick import QQuickView
 from bz import Bozorgrah
@@ -23,6 +24,7 @@ if __name__ == '__main__':
 	app = QGuiApplication(sys.argv)
 	app.setLayoutDirection(Qt.RightToLeft);
 
+
 	view = QQuickView()
 	context = view.rootContext()
 	
@@ -42,6 +44,9 @@ if __name__ == '__main__':
 	view.setSource(
 			QUrl.fromLocalFile(
 					os.path.join(approot,'qml\\app.qml')))
+					
+
+	view.setFlags(Qt.Dialog or Qt.WindowStaysOnBottomHint);
 	view.setTitle("ميزکار")
 	view.show()
 	

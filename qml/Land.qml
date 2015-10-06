@@ -9,7 +9,7 @@ Item {
 			id:landimage
 			source : "land/001.png";
 			asynchronous: true;
-			fillMode: Image.PreserveAspectCrop;
+			fillMode: Image.Stretch ;
 			anchors.fill: parent;
 			smooth: true			
 		}

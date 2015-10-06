@@ -7,7 +7,7 @@ import QtQuick.Controls 1.4
 
 Item {
 	id:page
-    width: 1024; height: 768;
+    width: 1350; height: 700;
 	Loader{
 		id:pageloader
 		anchors.fill:page
@@ -15,10 +15,11 @@ Item {
 
 	ComboBox{
 		id:modelcombo
-		currentIndex:0
+		currentIndex:2
 		width:70
 		model: ListModel{
 			id: framemodel
+			ListElement{ src:"Landscape.qml"; text:"منظره"}
 			ListElement{ src:"Helipit.qml"; text:"هلی کوپتر"}
 			ListElement{ src:"Portal.qml"; text:"درگاه"}
 		}

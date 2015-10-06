@@ -17,7 +17,8 @@ WidgetFrame{
 		username:"me_ahmadi"
 		password:"meisam"
 		Component.onCompleted:{
-			bz.getCurrentData()
+			//bz.getCurrentData()
+			bz.getCurrentDataFromFile()
 		}
 	}
 
