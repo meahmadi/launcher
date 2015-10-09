@@ -18,8 +18,8 @@ Item {
 	property real xpos;
 	property real ypos;
 	
-	x: xpos * parent.xsc
-	y: ypos * parent.ysc
+	x: xpos * page.xsc
+	y: ypos * page.ysc
 	
 	
     Item {

@@ -1,20 +1,24 @@
 
 import QtQuick 2
+import QtQuick.Window 2.2
 import QtQuick.Particles 2.0
 
 Item {
 	id:frameitem
 	property Item img: frameimage
+	
+	property real xsc : width/Screen.width
+	property real ysc : height/Screen.height	
+	
 	Image{
 			id:frameimage
-			source : "frame/001.png";
+			source : "frame/004.png";
 			asynchronous: true;
 			fillMode: Image.Stretch ;
 			anchors.fill: parent;
 			smooth: true			
 		}
 	
-	property int current : 0;
 	
 	TXTButton{
 		text:"رؤيت عالم"
@@ -23,13 +27,6 @@ Item {
 		onClicked: Qt.openUrlExternally("D:/Royat/3.12/Royat/Royat.exe")
 	}
 
-	
-	TXTButton{
-		text:"C"
-		anchors.left: frame.left
-		anchors.bottom: frame.bottom
-		onClicked: Qt.openUrlExternally("c:")
-	}
 		
 	TXTButton{
 		id:quitbtn
@@ -38,4 +35,12 @@ Item {
 		anchors.bottom: frame.bottom
 		onClicked: Qt.quit()
 	}
+	
+	FixButton{
+		text:"C"
+		xpos: 100
+		ypos: 100
+		onClicked: Qt.openUrlExternally("c:")
+	}
+
 }

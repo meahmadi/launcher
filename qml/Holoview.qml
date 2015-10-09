@@ -16,10 +16,6 @@ Rectangle{
 	anchors.fill: parent
 	anchors.margins: 40
 	
-	Bozorgrah{
-		basey:100
-		basex:100
-	}
 
 	TestFileWidget{
 		basey:100

@@ -7,13 +7,12 @@ Item {
 	property Item img: landimage
 	Image{
 			id:landimage
-			source : "land/001.png";
+			source : "land/006.png";
 			asynchronous: true;
 			fillMode: Image.Stretch ;
 			anchors.fill: parent;
 			smooth: true			
 		}
 	
-	property int current : 0;	
 	
 }

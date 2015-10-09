@@ -7,7 +7,7 @@ Item {
 	property Item img: skyimage
 	Image{
 			id:skyimage
-			source : "sky/001.png";
+			source : "sky/009.png";
 			asynchronous: true;
 			fillMode: Image.Stretch ;
 			anchors.fill: parent;
@@ -25,7 +25,6 @@ Item {
 		}
 
 	}
-	property int current : 0;
-	
+		
 	
 }

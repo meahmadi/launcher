@@ -7,13 +7,13 @@ import QtQuick.Controls 1.4
 
 Item {
 	id:page
-    width: 1350; height: 700;
+    width: 1100; height: 700;
 	Loader{
 		id:pageloader
 		anchors.fill:page
 	}
 
-	ComboBox{
+/*	ComboBox{
 		id:modelcombo
 		currentIndex:2
 		width:70
@@ -29,9 +29,9 @@ Item {
 		
 		anchors.bottom:page.bottom
 		anchors.left:page.left
-	}	
+	}*/	
 	
 	Component.onCompleted:{
-		pageloader.source= framemodel.get(modelcombo.currentIndex).src
+		pageloader.source= "Portal.qml"//framemodel.get(modelcombo.currentIndex).src
 	}
 }
